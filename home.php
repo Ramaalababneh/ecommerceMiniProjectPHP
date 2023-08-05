@@ -19,10 +19,12 @@ session_start();
   
 <!-- section one Slider--------------------------------------------------------------------------------->
 <div class="slider">
-    <img src="hhh.jpg" alt="Image 1">
-    <img src="img2.jpg" alt="Image 2">
-    <img src="img3.jpg" alt="Image 3">
-    <img src="img4.jpg" alt="Image 4">
+    <img src="./images/img1.jpg" alt="Image 1">
+    <img src="./images/img2.jpg" alt="Image 2">
+    <img src="./images/img3.jpg"alt="Image 3">
+    <img src="./images/img4.jpg" alt="Image 4">
+    <img src="./images/img5.jpg" alt="Image 5">
+    <img src="./images/img6.jpg" alt="Image 6">
 </div>
 
 <!-- section welcome --------------------------------------------------------------------------------->
@@ -41,15 +43,15 @@ session_start();
         <form action="phphome.php" method="POST">
             <div class="row">
                 <div class="col-25">
-                    <label for="name" style="color:#808000;">Name :</label>
+                    <label for="name" style="color:#808000; padding-left: 30px;">Name :</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="name" name="name" placeholder="Name ..." Required>
+                    <input type="text" id="name" name="name" placeholder="Name ..." Required >
                 </div>
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="description" style="color:#808000;">Description :</label>
+                    <label for="description" style="color:#808000; padding-left: 30px;">Description :</label>
                 </div>
                 <div class="col-75">
                     <input type="text" id="description" name="description" placeholder="Description ..."Required>
@@ -57,7 +59,7 @@ session_start();
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="price" style="color:#808000;">Price :</label>
+                    <label for="price" style="color:#808000; padding-left: 30px;">Price :</label>
                 </div>
                 <div class="col-75">
                     <input type="text" id="price" name="price" placeholder="Price ..." Required>
@@ -65,16 +67,17 @@ session_start();
             </div>
             <div class="row">
                 <div class="col-25">
-                    <label for="img" style="color:#808000;">Image :</label>
+                    <label for="img" style="color:#808000; padding-left: 30px;">Image :</label>
                 </div>
                 <div class="col-75">
                     <input type="text" id="img" name="img" placeholder="Image Link ..." value = "https://cdn11.bigcommerce.com/s-3svqmxmj8l/images/stencil/500x659/products/1843/3829/Bob_Ross_3_Fan_Blender-CU__32514.1656602746.jpg?c=2">
                 </div>
             </div>
             <br>
-            <div class="row">
-                <button class="addbtn" name= "submit" style="background-color:#808000;" >Add Products</button>
-            </div>
+            <div class="row d-flex justify-content-center"> <!-- Updated class here -->
+            <button class="addbtn" name="submit" style="background-color:#808000; width: 150px; height: 50px;">Add Products</button>
+        </div>
+
         </form>
         <!-- <?php print_r($_SESSION); ?> -->
     </div>
@@ -108,9 +111,9 @@ session_start();
         </tbody>
     </table>
     
-    <a href="products.php">
-        <button class="addbtn" name="submit" style="background-color:#808000;">View Products</button>
-    </a>
+    <a href="products.php" class="d-flex justify-content-center"> <!-- Updated class here -->
+    <button class="addbtn" name="submit" style="background-color:#808000;">View Products</button>
+  </a>
 </div>
     </tbody>
 </table>

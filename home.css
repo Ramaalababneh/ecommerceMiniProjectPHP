@@ -25,29 +25,6 @@ body {
   display: none; /* Hide the horizontal scrollbar on webkit browsers */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Custom CSS to style the paragraph */
 p {
   font-size: 18px;
@@ -57,16 +34,6 @@ p {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* For smaller screens, display images in a column */
@@ -122,7 +89,7 @@ label {
 }
 
 .col-75 {
-  /* float: left; */
+  float: left;
   width: 75%;
   margin-top: 6px;
 }
