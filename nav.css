@@ -1,0 +1,21 @@
+.navbar .navbar-brand
+{
+    font-weight: bolder;
+    font-size: xx-large;
+    color:#808000;
+}
+
+/* Custom CSS for the navigation bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Optional: Set a higher z-index value to ensure the navbar is above other elements */
+  }
+  
+/* .nav-link 
+{
+    justify-content: end;
+    margin-left: 600px; 
+} */

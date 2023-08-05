@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.slider {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+  scroll-snap-type: x mandatory; /* Enable snap scrolling to each image */
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px; /* Add some padding to the slider container */
+  margin: 0 auto; /* Center the slider */
+  max-width: 100%; /* Ensure the slider doesn't overflow its container */
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  margin-right: 10px; /* Add some space between the images */
+}
+
+.slider::-webkit-scrollbar {
+  display: none; /* Hide the horizontal scrollbar on webkit browsers */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom CSS to style the paragraph */
+p {
+  font-size: 18px;
+  color: #333;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* For smaller screens, display images in a column */
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: row;
+    }
+}
+
+/* form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+
+.addbtn {
+  background-color: rgba(9, 9, 9, 0.5);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  /* float: right; */
+  
+ 
+}
+
+.addbtn:hover {
+  background-color: #FEA1A1;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 50px;
+  
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  /* float: left; */
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
